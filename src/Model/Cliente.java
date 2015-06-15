@@ -9,14 +9,15 @@ package Model;
  * @author info206
  */
 public class Cliente {
-  int cpf;
+  int cpf,planos_id;
   String nome;
   String telefone;
   String idade;
   String sexo;
 
-    public Cliente(int cpf, String nome, String telefone, String idade, String sexo) {
+    public Cliente(int cpf, int planos_id, String nome, String telefone, String idade, String sexo) {
         this.cpf = cpf;
+        this.planos_id = planos_id;
         this.nome = nome;
         this.telefone = telefone;
         this.idade = idade;
@@ -29,6 +30,14 @@ public class Cliente {
 
     public void setCpf(int cpf) {
         this.cpf = cpf;
+    }
+
+    public int getPlanos_id() {
+        return planos_id;
+    }
+
+    public void setPlanos_id(int planos_id) {
+        this.planos_id = planos_id;
     }
 
     public String getNome() {
@@ -62,6 +71,8 @@ public class Cliente {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
+   
   
   
    
